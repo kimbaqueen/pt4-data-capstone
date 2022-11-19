@@ -88,6 +88,13 @@ img {
     align-items: flex-end;
 }
 
+.conclusion-text {
+    color: var(--clr-text);
+    margin: 0;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
 .description-text {
     color: var(--clr-text);
     margin: 0;
@@ -128,11 +135,11 @@ nav {
     flex-grow: 1;
     display: flex;
     justify-content: space-around;
-    color: (--clr-text);
+    color: var(--clr-text);
 }
 
 .nav__link {
-    color: (--clr-text);
+    color: var(--clr-text);
     text-transform: capitalize;
     text-decoration: none;
 }
@@ -147,15 +154,24 @@ nav {
     gap: 0.5em;
 }
 
+.resources-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
 footer {
-    margin-top: 2em;
+    margin-top: 0.5em;
 }
 
 .social-link,
 .social-img {
     display: flex;
-    gap: 2em;
+    align-items: flex-start;
+    gap: 1em;
     color: var(--clr-icons);
+    margin-bottom: 2em;
 }
 
 .social-link:hover,
