@@ -90,7 +90,8 @@ img {
 
 .conclusion-text {
     color: var(--clr-text);
-    margin: 0;
+    margin-right: 0;
+    padding-right: 2em;
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
@@ -99,12 +100,12 @@ img {
     color: var(--clr-text);
     margin: 0;
     margin-right: 0;
+    padding-right: 2em;
     font-size: 1rem;
     margin-bottom: 0.5rem;
     display: flex;
     justify-items: flex-start;
     align-items: flex-end;
-    /* max-width: 75%; */
 }
 
 .container {
@@ -229,12 +230,14 @@ footer {
 
     .location,
     .description,
-    .description-text {
+    .description-text,
+    .conclusion-text {
         grid-column: 1 / 2;
     }
 
     .description::after,
-    .description-text::after {
+    .description-text::after,
+    .conclusion-text::after {
         /* content: "01"; */
         font-size: 50vw;
         position: absolute;
