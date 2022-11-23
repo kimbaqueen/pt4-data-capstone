@@ -53,16 +53,30 @@ Questions:
 
 # Exploratory Data Analysis
 
-- statistics
-- visualization of major variables
-- checks for missing data
-- displays of correlation
+## Statistics
+Each Jupyter notebook includes a review of:
+- Basic Statistics
+- Visualizations of Major Variables
+- Checks for Missing Data
+- Displays of Correlation *** pending ***
+
+For all Jupyter notebooks, I started exploring each dataset by analyzing what the possible columns are and confirmed data types and data sizes. From there I created subsets using relevant columns data as new variables "train_data_subset", "paygap_data_subset", & "dist_data_subset", respectfully. I researched each dataset for missing values and explored what those missing values data points characteristics look like. I further inspected categorical values to ensure they were standardized and inspected numerical values and how those were distributed with a histogram analysis. No suspicious values found with both the train.csv and Glassdoor Gender Pay Gap.csv datasets. Both were evenly distributed as confirmed via data analysis.
+
+Other notable findings: 
+For the distributions_data_2016.csv dataset, after conducting similar analysis as described above, I was able to conclude this dataset size was limited in value counts. It also lacked enough unique values and was not evenly distributed. It also did not have any numerical values that could add value to my project. After this careful consideration, I decided to exclude this dataset from my final project analysis. 
+
 
 # Data Wrangling
 
-- Feature engineering
-- data cleansing
-- organization of data for modeling
+- Feature Engineering
+- Data Cleansing
+- Organization of Data for Modeling
+
+I approached feature engineering by spending quality efforts in exploring the datasets and by creating subsets within each dataframe. This allowed me to choose only relevant features/columns. I also spent time analyzing for null values and where those null values may be trending in the dataset. Categorical values were also confirmed to be standardized. 
+
+This helped with my efficiency when I was to this stage to cleanse the data. I was already familiar with the null values and counts. I was able to anaylze it further from here to determine on the NaN values, how to best replace each column's values. For the education column, it made the most sense to use a "Not Provided" value based on the other categorical responses. For the previous year's rating (performance), I decided to use a similar datatype instead using the most common value of 3.0. 
+
+In review of the Gender pay gap dataset, while there was no null values to address, I did discover there to be some outliers outside of the 25% & 75% quartiles. After further analysis, I found there was only 9 index rows affected and decided to drop these rows as they were not significant to the overall data population size. 
 
 # Statistical Analysis
 
