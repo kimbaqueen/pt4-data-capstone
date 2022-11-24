@@ -84,6 +84,7 @@ In review of the Gender pay gap dataset, while there was no null values to addre
 - output/ interpretation of coefficients
 - analysis of p-value, r-squared/other success metrics
 
+Added more statistical visualizations, including histplot, scatter, heatmap, and correlation. **still in progress to complete this section**
 
 # Project Findings / Conclusion
 - display of results, insights, conclusions from full project
