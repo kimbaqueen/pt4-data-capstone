@@ -24,6 +24,20 @@ img {
     max-width: 100%;
 }
 
+.footnote-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-size: smaller;
+}
+
+.article-link {
+    cursor: pointer;
+    text-decoration: none;
+    font-style: italic;
+    color: #fff;
+}
+
 .btn,
 .nav__link {
     cursor: pointer;
@@ -81,11 +95,11 @@ img {
 .list-text {
     color: var(--clr-text);
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin-bottom: 0.5rem;
     display: flex;
     justify-items: flex-start;
-    align-items: flex-end;
+    /* align-items: flex-end; */
 }
 
 .conclusion-text {
@@ -205,12 +219,14 @@ img {
 
 .sub-container-footer {
     display: flex;
-    /* gap: 5px; */
 }
 
 .data-footer-image {
-    position: relative;
-    height: 25rem;
+    object-fit: fill;
+    object-position: center;
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 100%;
 }
 
 .sub-container2 {
@@ -243,7 +259,6 @@ img {
 .subcontainer-top1 {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     background-color: var(--clr-icons);
     gap: 5px;
     margin-right: 20px;

@@ -1,22 +1,26 @@
 # Project Overview Description:
 
-*** Refinement needed ***
+This project's purpose is to research gender pay biases, particularly for women in the United States. Using data gathered primarily from Glassdoor, I examined trends of how women across different job titles and functions pay is affected. Primary features included Base Pay, Job Department & Titles, Gender, and Age. 
 
-- Purpose & what project is, primary features description, challenges/interesting notes about project.
+Some challenges I overcame was finding diversified data on gender pay gap in my initial project exploration phase. It was further difficult to find transparent data for women of color and other underrepresented groups and pay biases. This project is interesting to me because since the onset of the COVID pandemic, there has been more workplace talk of equity and inclusion. U.S. Companies are spending $8 Billion annually, historically more now than ever, on DEI initiatives but yet pay gap disparity continues to be a hot topic[^1]. 
 
-Questions:
+[^1]: https://fortune.com/2021/12/07/metrics-diversity-inclusion-workplace-careers-joan-williams/
 
-- How does gender compare in workplace promotions?
-- Does pay gap disparity occur in higher education and higher experienced roles?
-- Where are we seeing the biggest gaps between gender compensation?
+
+## Questions:
+
+- How does compensation compare in the current workplace between genders?
+- Do pay gap biases trends exist across different Job functions?
+- Where are we seeing the greatest compensation biases?
 
 ## Project Tech Stack:
 
 - Jupyter Lab
 - SQL
 - Python
-    > Including: Pandas, Numpy, Seaborn, Matplotlib, Plotly Express libraries
+    > Including: Pandas, Numpy, Seaborn, Matplotlib, Plotly Express, Scipy libraries
 - HTML/CSS
+    > Bonus Materials: I also utilized methods that were not covered in our DevMountain Data Analytics coursework, including informational data dashboard & website design, FacetGrid and advanced visualization styling effects. 
 
 # Dataset Descriptions
 
@@ -85,7 +89,7 @@ Each Jupyter notebook includes a review of:
 
 I approached feature engineering by spending quality efforts in exploring the datasets and by creating subsets within each dataframe. This allowed me to choose only relevant features/columns. I also spent time analyzing for null values and where those null values may be trending in the dataset. Categorical values were also confirmed to be standardized. 
 
-This helped with my efficiency when I was to this stage to cleanse the data. I was already familiar with the null values and counts. I was able to anaylze it further from here to determine on the NaN values, how to best replace each column's values. For the education column, it made the most sense to use a "Not Provided" value based on the other categorical responses. For the previous year's rating (performance), I decided to replace values missing to a matching datatype and by using the most common value of 3.0 for this feature in the dataframe. 
+This helped with my efficiency when I was to this stage to cleanse the data. I was already familiar with the null values and counts. I was able to analyze it further from here to determine on the NaN values, how to best replace each column's values. For the education column, it made the most sense to use a "Not Provided" value based on the other categorical responses. For the previous year's rating (performance), I decided to replace values missing to a matching datatype and by using the most common value of 3.0 for this feature in the dataframe. 
 
 In review of the Gender pay gap dataset, while there was no null values to address, I did discover there to be some outliers outside of the 25% & 75% quartiles. After further analysis, I found there was only 9 index rows affected and decided to drop these rows as they were not significant to the overall data population size. 
 
@@ -97,14 +101,36 @@ Each Jupyter notebook includes a review of:
 - output/ interpretation of coefficients
 - analysis of p-value, r-squared/other success metrics
 
-Using Seaborn & matplotlib, I approached by analysing pairplots to find relationships worth exploring more in depth. I was able to find features that did have relationships such as Age & BasePay, and Bonus & BasePay. I further researched the relationships by running regression plots and inspecting the outputs by using KDE, pairplots, heatmaps to discover coefficient trends. 
+Using Seaborn & matplotlib, I approached by analyzing pairplots to find relationships worth exploring more in depth. I was able to find features that did have relationships such as Age & BasePay, and Bonus & BasePay. I further researched the relationships by running regression plots and inspecting the outputs by using KDE, pairplots, heatmaps to discover coefficient trends. 
 
 I found using regplot was excellent to showcase the negative/positive trends and ability to stylize it for demonstrations would be very useful in real world applications. For p-value, scipy stats was imported to analyze. Unfortunately the annotate function to add was deprecated. This will be added onto future feature versions of this project.
 
 # Project Findings / Conclusion
 
-*** Refinement needed ***
+## Findings
 
-- display of results, insights, conclusions from full project
-- display of potential shortfalls of models/insights, and discussion of potential next steps
-- talk about many contributing factors, equal pay days change every year for women & minorities & links to other helpful info
+- Women still experience pay equity biases in the workplace today.
+- Women are majority at a disadvantage for both pay parity and representation across job titles and functions.
+- The largest gender pay bias was found amongst the Engineering department, followed by Administrative & Sales department roles.
+
+After examining the data, it was clear that gender equity pay biases still exist today. While there are many underlying factors at play, our dataframe sets confirmed that women were trending below men on the pay scale across departments and job functions as a majority.
+
+In terms of representation, Women made up more than 90% of the Marketing Associate roles. However, this was one of the highest disparity job title groups for base pay between genders. The Engineering department had the largest difference of average base pay between genders, with women making up less than 10% of this department for comparison.
+
+Other interesting findings were Base Pay and Bonus Pay were negatively correlated for both genders. Age and Base Pay was positively correlated for both genders. Still, when analyzing Average Base Pay against age between genders, women were still trailing behind in all department categories.
+
+Potential shortfalls of this project are around the data collection and integrity of data reported online. There is not much transparency in salaries across job functions, gender, and other HR sensitive metrics. Even if a company does have this information, they may not make it publicly available due to fear of public retaliation or other legal implication risks.
+
+In future enhancements to this project's research, I'd like to find and explore more specific data on women of color and other underrepresented groups. In particular, representation of women of color rising the ranks in leadership roles across departments and industries, and their respective salaries in comparison to caucasian women and men.
+
+## Get Involved
+
+While having conversations in the workplace about DEI is important, it's not enough. To impact meaningful change we must be willing to accept some degree of risk and take a candid inventory of where your company stands. Look for meaningful metrics. Treat DEI like any other company initiative that needs to get results and be ready to act on what you find[^2]. 
+
+[^2]: https://hbr.org/2022/03/data-driven-diversity
+
+- Research. Stay informed. Become actively involved in your community.
+- Advocate. Be an Ally.
+- Mentor and Sponsor Women & Underrepresented Groups.
+
+### Additional Resources & Recommended Articles on the project webpage
