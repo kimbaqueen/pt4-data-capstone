@@ -126,8 +126,27 @@ img {
 }
 
 .top-image-left {
+    object-fit: fill;
+    object-position: center;
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 100%;
+}
+
+.top-image-left-middle {
     object-fit: contain;
     object-position: center;
+    flex: 0.85 1 0;
+    min-width: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.regression-plot {
+    object-fit: fill;
+    object-position: center;
+    min-width: 0;
+    min-height: 100%;
 }
 
 .container-box {
@@ -168,19 +187,19 @@ img {
 .container-header-title {
     background-color: #fff;
     color: #000;
+    font-size: 2rem;
+    margin: 8px;
+    margin-top: 10px;
+    padding: 6px;
+    padding-left: 20px;
+    opacity: 0.85;
 }
 
 .sub-container {
-    /* height: 45vh; */
-    /* height: 100vh; */
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex: 1 1 20em;
-    /* object-fit: contain; */
-    /* margin: 5px; */
-    margin-right: 0;
+    justify-content: space-between;
+    margin: 5px;
     gap: 5px;
 }
 
