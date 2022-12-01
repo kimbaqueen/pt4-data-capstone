@@ -20,7 +20,7 @@ Some challenges I overcame was finding diversified data on gender pay gap in my 
 - Python
     > Including: Pandas, Numpy, Seaborn, Matplotlib, Plotly Express, Scipy libraries
 - HTML/CSS
-    > Bonus Materials: I also utilized methods that were not covered in our DevMountain Data Analytics coursework, including informational data dashboard & website design, FacetGrid and advanced visualization styling effects. 
+    > Bonus Materials: I also utilized methods that were not covered in our DevMountain Data Analytics coursework, including an informational data dashboard & website design, FacetGrid and advanced visualization styling effects. For my project webpage design, I also was careful to include mobile responsive design and styling outside of the foundations and data analytics program's scope. 
 
 # Dataset Descriptions
 
@@ -134,3 +134,6 @@ While having conversations in the workplace about DEI is important, it's not eno
 - Mentor and Sponsor Women & Underrepresented Groups.
 
 ### Additional Resources & Recommended Articles on the project webpage
+
+    > Demo Video: https://youtu.be/4Xb1bGlN4d0
+    > Project Webpage: https://kimbaqueen.github.io/DMDataCapstone/index.html
