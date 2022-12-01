@@ -135,5 +135,5 @@ While having conversations in the workplace about DEI is important, it's not eno
 
 ### Additional Resources & Recommended Articles on the project webpage
 
-    > Demo Video: https://youtu.be/4Xb1bGlN4d0
-    > Project Webpage: https://kimbaqueen.github.io/DMDataCapstone/index.html
+Demo Video: https://youtu.be/4Xb1bGlN4d0
+Project Webpage: https://kimbaqueen.github.io/DMDataCapstone/index.html
